@@ -1,11 +1,11 @@
 import { request } from "../api";
-import { Project } from "@shared/components/FigurItem/item";
+import { Data } from "@shared/components/FigurItem/item";
 
 
 class ProjectService {
 
   getProject(url:string) {
-    return request.get<Project>(url)
+    return request.get<Data>(url)
   }
 }
 

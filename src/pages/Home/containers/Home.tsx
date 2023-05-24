@@ -1,12 +1,16 @@
 import React, { memo } from "react";
-import { Box } from "@mui/material";
-import Heading from "@pages/Home/components/Heading";
+import Heading from "@pages/Home/components/Heading/Heading";
+import Field from "@pages/Home/components/Field/Field";
+import { Wrapper } from "@pages/Home/containers/Home.styles";
+import SubHeading from "@pages/Home/components/SubHeading/SubHeading";
 
 const Home = () => {
   return (
-    <Box width={"100%"}>
-       <Heading/>
-    </Box>
+    <Wrapper>
+      <Heading />
+      <SubHeading/>
+      <Field />
+    </Wrapper>
   );
 };
 

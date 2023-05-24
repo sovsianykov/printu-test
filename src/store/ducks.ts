@@ -1,11 +1,11 @@
-import { Project } from "@shared/components/FigurItem/item";
 import { createSlice } from "@reduxjs/toolkit";
 import { fetchProject } from "./thunk";
 import { Nullable } from "@shared/models/general";
+import { Data } from "@shared/components/FigurItem/item";
 
 
 interface projectStore {
-   data: Nullable<Project>;
+   data: Nullable<Data>;
    loading: boolean;
    isLoaded: boolean
    error: Nullable<string>

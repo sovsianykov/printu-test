@@ -1,4 +1,4 @@
-export interface Response {
+export interface Data {
   id: string
   project: Project
 }
