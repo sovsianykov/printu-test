@@ -7,7 +7,7 @@ export const Rectangle = styled(Box)<StyleProps>`
   stroke-opacity: 0.4;
   border-radius: 2px;
   position: absolute;
-  bottom: ${({ item }) => item.y - item.height / 2}px;
+  //bottom: ${({ item }) => item.y - item.height / 2}px;
   left: ${({ item }) => item.x - item.width / 2}px;
 `;
 export const Dot = styled(Box)<StyleProps>`

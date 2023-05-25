@@ -1,4 +1,4 @@
-import { Item } from "@pages/Home/containers/Field/FigurItem/models";
+import { Item, Project } from "@pages/Home/containers/Field/FigurItem/models";
 
 export const positionCalc = (item: Item) => {
   const cosinusOne = Math.abs(Math.cos(item.rotation * (Math.PI / 180.0)));
@@ -17,3 +17,8 @@ export const positionCalc = (item: Item) => {
 
   return { w, h, b, r };
 };
+
+export  const convertToPercent = (project: Project,item:Item) => {
+  const yPercent = `${(item.y/project.height)*100 -20}%`
+  return { yPercent }
+}
