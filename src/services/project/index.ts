@@ -1,5 +1,5 @@
 import { request } from "../api";
-import { Data } from "@shared/components/FigurItem/item";
+import { Data } from "@pages/Home/containers/Field/FigurItem/models";
 
 
 class ProjectService {

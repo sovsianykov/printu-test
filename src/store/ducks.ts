@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { fetchProject } from "./thunk";
 import { Nullable } from "@shared/models/general";
-import { Data } from "@shared/components/FigurItem/item";
+import { Data } from "@pages/Home/containers/Field/FigurItem/models";
 
 
 interface projectStore {
@@ -25,14 +25,18 @@ const projectSlice = createSlice({
   extraReducers: (builder) => {
     builder.addCase(fetchProject.pending, (state)=> {
       state.loading = true
+      state.isLoaded = false
     });
     builder.addCase(fetchProject.fulfilled, (state,action)=> {
       state.data = action.payload
       state.loading = false
+      state.isLoaded = true
+
       state.error = null
     });
     builder.addCase(fetchProject.rejected, (state,action)=> {
       state.loading = false
+      state.isLoaded = false
       state.error = action.payload as string
     });
   }

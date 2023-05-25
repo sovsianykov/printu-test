@@ -2,9 +2,15 @@ import { Box, styled } from "@mui/material";
 
 
 export const Root = styled(Box)`
-  max-width: 100%;
+  width: 100%;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  padding: 0 10px;
+  z-index: 10;
   height: 60px;
   display: flex;
+  background: #ffffff;
   align-items: center;
 `
 export const DataHolder = styled(Box)`

@@ -2,9 +2,13 @@ import { Box, Button, styled } from "@mui/material";
 import { Form } from "formik";
 
 export const MuiForm = styled(Form)`
-  max-width: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
   height: 50px;
-  color: #ffffff;
+  background: #ffffff;
   display: flex;
   justify-content: flex-start;
   align-items: center;
