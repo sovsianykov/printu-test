@@ -11,7 +11,7 @@ const Field: FunctionComponent<FieldProps> = ({ project }) => {
   return (
     <Wrapper project={project}>
       {project?.items.map((item) => (
-        <FigureItem item={item} key={item.id} />
+        <FigureItem item={item} key={`${item.id} + ${Date.now()}`} />
       ))}
     </Wrapper>
   );

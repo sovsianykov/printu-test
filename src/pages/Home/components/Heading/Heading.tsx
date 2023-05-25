@@ -18,7 +18,7 @@ const Heading = () => {
       }}
       onSubmit={(values, { resetForm }) => {
         const newProjectId = {
-          projectId: "li1j3u92004108jpbmtzd0e5-3821167421558942",
+          projectId: values.projectId,
         };
         dispatch(fetchProject(newProjectId.projectId));
         resetForm();

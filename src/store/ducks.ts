@@ -31,7 +31,6 @@ const projectSlice = createSlice({
       state.data = action.payload
       state.loading = false
       state.isLoaded = true
-
       state.error = null
     });
     builder.addCase(fetchProject.rejected, (state,action)=> {
